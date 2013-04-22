@@ -330,6 +330,10 @@ syntax match mipsDirective "\.word"
     syntax keyword mipsInstruction sne
 "}}}
 
+"" Macros ? {{{
+    syntax keyword mipsPseudoInstruction subi subiu
+    syntax keyword mipsPseudoInstruction ble bge
+"}}}
 " Floating-Point Instructions {{{
 syntax match mipsInstruction "abs\.d"
 syntax match mipsInstruction "abs\.s"
@@ -384,13 +388,14 @@ syntax match mipsInstruction "trunc\.w\.s"
 "}}}
 
 " Linking {{{
-hi def link mipsComment        Comment
-hi def link mipsNumber         Number
-hi def link mipsString         String
-hi def link mipsLabel          Label
-hi def link mipsRegister       Identifier
-hi def link mipsDirective      Type
-hi def link mipsInstruction    Statement
+hi def link mipsComment             Comment
+hi def link mipsNumber              Number
+hi def link mipsString              String
+hi def link mipsLabel               Label
+hi def link mipsRegister            Identifier
+hi def link mipsDirective           Type
+hi def link mipsInstruction         Statement
+hi def link mipsPseudoInstruction   PreProc
 "}}}
 
 let b:current_syntax = "mips"
