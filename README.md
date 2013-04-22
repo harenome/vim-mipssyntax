@@ -14,7 +14,8 @@ This syntax file should support the following revisions of the MIPS instruction 
 - MIPS V
 - MIPS 32
 - MIPS 64
-It also supports a few pseudo instructions such as ```subi``` and ```subiu``` and additionnal directives such as [MARS](http://courses.missouristate.edu/KenVollmar/MARS/index.htm "MARS MIPS Siulator")'s ```.macro```, ```.eqv``` and ```.include``` directives.
+
+It also supports a few pseudo instructions such as ```subi``` or ```subiu``` and additionnal directives such as [MARS](http://courses.missouristate.edu/KenVollmar/MARS/index.htm "MARS MIPS Siulator")'s ```.macro```, ```.eqv``` and ```.include``` directives.
 
 Installation
 ------------
@@ -27,7 +28,7 @@ If you're using pathogen, you can also:
 cd ~/.vim/bundle
 git clone git://github.com/HarnoRanaivo/vim-mipssyntax.git
 ````
-Unless you are managing your whole vim files using git, in which case you will need to use gitmodules. Go to the root of your repository and type:
+Unless you are managing your vim files using git, in which case you will need to use gitmodules. Go to the root of your repository and type:
 ````
 git submodule add git://github.com/HarnoRanaivo/vim-mipssyntax.git [<path to .vim/bundle>/vim-mipssyntax]
 ````
@@ -39,7 +40,7 @@ git submodule update
 
 Highlights
 ----------
-If you want to be able to tell the difference between actual instructions, aliases, macros and pseudo instructions, change the lines 365 to 375 something like this, for instance:
+If you want to be able to tell the difference between actual instructions, aliases, macros and pseudo instructions, change the lines ```466``` to ```476``` to something like this, for instance:
 ````
 hi def link mipsComment             Comment
 hi def link mipsNumber              Number
