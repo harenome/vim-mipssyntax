@@ -56,7 +56,7 @@ hi def link mipsPseudoDirective     Special
 ````
 Of course, this requires your colorscheme to set different colours for these highlights.
 
-You can also change this colors manually by getting to the bottom of the file and add lines like these:
+Colors can also be changed manually by getting to the bottom of the file, and adding this kind of line:
 ````
 " Change colors {{{
 hi Label ctermfg=LightBlue
