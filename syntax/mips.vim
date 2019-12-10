@@ -474,6 +474,10 @@ hi def link mipsAlias               mipsInstruction
 hi def link mipsMacro               mipsInstruction
 hi def link mipsPseudoInstruction   PreProc
 hi def link mipsPseudoDirective     PreProc
+
+" Change Colors {{{
+hi Label ctermfg=LightBlue
+"}}}
 "}}}
 
 let b:current_syntax = "mips"
